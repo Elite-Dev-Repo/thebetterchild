@@ -11,7 +11,7 @@ const Filler = () => {
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
-      <div className="flex flex-col items-center justify-center relative text-center px-7 bg-foreground/10 backdrop-blur-3xl h-65 text-background">
+      <div className="flex flex-col items-center justify-center relative text-center px-7 bg-foreground/10 backdrop-blur-[5px] h-65 text-background">
         <h2 className="text-4xl md:text-6xl font-bold  tracking-tight">
           Making a Difference Together
         </h2>

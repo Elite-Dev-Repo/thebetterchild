@@ -71,7 +71,6 @@ function MyCarousel() {
             <AlertDialog key={index}>
               <AlertDialogTrigger asChild>
                 <CarouselItem
-                  // FIX: Removed 'image' from the argument list to use the one from .map()
                   onClick={() => {
                     setTheImg(image);
                   }}
@@ -83,7 +82,7 @@ function MyCarousel() {
                         <img
                           src={image}
                           alt={`Gallery image ${index + 1}`}
-                          className="w-full h-[400px] object-cover transition-transform hover:scale-105 duration-300"
+                          className="w-full h-[400px] grayscale-0 object-cover transition-transform hover:scale-105 duration-300"
                         />
                       </CardContent>
                     </Card>

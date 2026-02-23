@@ -29,7 +29,7 @@ const Vm = () => {
 
   return (
     <section className="py-24">
-      <div className="container px-6 mx-auto">
+      <div className="container px-6 mx-auto" id="vision">
         {/* Top Section: Vision & Mission Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
           {/* Mission Card */}
