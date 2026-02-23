@@ -39,7 +39,7 @@ const Story = () => {
         className="container px-6 mx-auto"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
+        viewport={{ margin: "-100px" }}
         variants={containerVariants}
       >
         <div className="flex flex-col lg:flex-row gap-16 items-center">
@@ -73,12 +73,7 @@ const Story = () => {
             </motion.div>
 
             {/* Entrepreneurship Tag */}
-            <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ delay: 1 }}
-              className="absolute max-sm:hidden -bottom-6 left-1/2 -translate-x-1/2 z-20 bg-white px-6 py-3 rounded-full shadow-md border border-slate-100 flex items-center gap-2"
-            >
+            <motion.div className="absolute max-sm:hidden -bottom-6 left-1/2 -translate-x-1/2 z-20 bg-white px-6 py-3 rounded-full shadow-md border border-slate-100 flex items-center gap-2">
               <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
               <span className="text-sm font-semibold text-slate-700">
                 Founder, God Dey's Crunches
@@ -88,6 +83,9 @@ const Story = () => {
 
           {/* Right: The Narrative */}
           <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
             className="w-full lg:w-7/12 space-y-8"
             variants={textVariants}
           >
