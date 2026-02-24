@@ -82,6 +82,7 @@ function MyCarousel() {
                         <img
                           src={image}
                           alt={`Gallery image ${index + 1}`}
+                          loading="lazy"
                           className="w-full h-[400px] grayscale-0 object-cover transition-transform hover:scale-105 duration-300"
                         />
                       </CardContent>
