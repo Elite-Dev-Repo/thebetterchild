@@ -152,7 +152,7 @@ const Story = () => {
                   size="lg"
                   className="rounded-full px-10 shadow-lg hover:shadow-primary/30 transition-all font-bold"
                 >
-                  Partner with Reuben
+                  Partner with The Better Child
                 </Button>
               </a>
             </motion.div>

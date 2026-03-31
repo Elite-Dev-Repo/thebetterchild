@@ -36,6 +36,8 @@ import img11 from "../assets/tbc11.jpeg";
 import img12 from "../assets/tbc12.jpeg";
 import img13 from "../assets/tbc13.jpeg";
 import img14 from "../assets/tbc14.jpeg";
+import img15 from "../assets/tbc15.jpg";
+import img16 from "../assets/tbc16.jpg";
 
 function MyCarousel() {
   const [theImg, setTheImg] = useState(null);
@@ -55,6 +57,8 @@ function MyCarousel() {
     img12,
     img13,
     img14,
+    img15,
+    img16,
   ];
 
   return (
@@ -66,7 +70,7 @@ function MyCarousel() {
         }}
         className="w-full max-w-5xl"
       >
-        <CarouselContent className="-ml-2 md:-ml-4">
+        <CarouselContent className="-ml-2 md:-ml-4 min-w-screen flex gap-4 md:gap-6">
           {images.map((image, index) => (
             <AlertDialog key={index}>
               <AlertDialogTrigger asChild>

@@ -4,7 +4,7 @@ import { Images } from "lucide-react";
 
 const Gallery = () => {
   return (
-    <section className="py-24 " id="impact">
+    <section className="py-24" id="impact">
       <div className="container px-6 mx-auto">
         {/* Header Section */}
         <div className="flex flex-col items-center text-center mb-16 space-y-4">

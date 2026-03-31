@@ -20,7 +20,7 @@ const Header = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="flex items-center justify-center gap-4 w-fit px-8 mx-auto bg-background rounded-full py-1"
+            className="flex items-center mt-7 justify-center gap-4 w-fit px-8 mx-auto bg-background rounded-full py-1"
           >
             <div className="w-3 h-3 animate-pulse rounded-full bg-foreground"></div>
             <span className="text-sm tracking-wider text-foreground uppercase">
@@ -34,7 +34,7 @@ const Header = () => {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="text-5xl md:text-7xl font-extrabold tracking-tight text-white drop-shadow-md"
           >
-            The Better Child
+            The Better Child Organization.
           </motion.h1>
 
           {/* Subtext Animation */}
