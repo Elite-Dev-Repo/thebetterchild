@@ -35,8 +35,8 @@ function Nav() {
       } flex items-center justify-between px-6 md:px-10`}
     >
       {/* Logo */}
-      <a href="/" className="z-[110]">
-        <img src={logo} className="w-32 md:w-40 transition-all" alt="Logo" />
+      <a href="/" className="z-[110] backdrop-blur-sm rounded-lg">
+        <img src={logo} className="w-32 md:w-15 transition-all" alt="Logo" />
       </a>
 
       {/* Desktop Links */}
