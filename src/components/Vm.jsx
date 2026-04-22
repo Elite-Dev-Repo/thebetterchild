@@ -56,9 +56,8 @@ const Vm = () => {
               Our Mission
             </h3>
             <p className="text-slate-600 text-lg leading-relaxed">
-              To provide children with a holistic environment where they are
-              nurtured academically, spiritually, and emotionally, ensuring they
-              grow into confident leaders who positively impact society.
+              To support children and families through holistic, value-driven
+              serices that promote godly character, growth, and well-being.
             </p>
           </motion.div>
 
@@ -75,9 +74,8 @@ const Vm = () => {
             </div>
             <h3 className="text-3xl font-bold mb-4">Our Vision</h3>
             <p className="text-slate-300 text-lg leading-relaxed">
-              To become a global beacon for child development, raising a
-              generation of purpose-driven individuals who carry the light of
-              excellence and faith into every sphere of life.
+              To raise Godly and holistic children who will positively impact
+              society snd fulfill their divine purpose.
             </p>
           </motion.div>
         </div>

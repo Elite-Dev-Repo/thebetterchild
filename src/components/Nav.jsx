@@ -30,13 +30,13 @@ function Nav() {
     <nav
       className={`fixed top-5 left-1/2 -translate-x-1/2 w-[95%] z-[100] transition-all duration-300 rounded-2xl ${
         isScrolled
-          ? "bg-foreground/80 backdrop-blur-md shadow-2xl h-[70px]"
+          ? "bg-foreground/95 backdrop-blur-md shadow-2xl h-[70px]"
           : "bg-transparent h-[80px]"
       } flex items-center justify-between px-6 md:px-10`}
     >
       {/* Logo */}
       <a href="/" className="z-[110] backdrop-blur-sm rounded-lg">
-        <img src={logo} className="w-32 md:w-15 transition-all" alt="Logo" />
+        <img src={logo} className="w-13 md:w-15 transition-all" alt="Logo" />
       </a>
 
       {/* Desktop Links */}

@@ -43,8 +43,9 @@ const Header = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-xl md:text-2xl text-slate-100 font-light leading-relaxed"
           >
-            Where every child finds the tools to grow, the freedom to play, and
-            the courage to dream big.
+            Where every child grows to become godly and well rounded, and every
+            parent finds the right tools, guidance, and support needed to raise
+            godly children.
           </motion.p>
 
           {/* Button Group Animation */}
