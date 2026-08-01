@@ -101,7 +101,7 @@ function MyCarousel() {
                   <AlertDialogDescription className="w-full h-full flex items-center justify-center">
                     <img
                       src={theImg}
-                      className="w-full max-h-[60vh] object-contain rounded-lg shadow-sm"
+                      className="w-full max-h-[70vh] object-contain rounded-lg shadow-sm"
                       alt="Selected preview"
                     />
                   </AlertDialogDescription>

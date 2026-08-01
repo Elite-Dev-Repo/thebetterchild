@@ -1,37 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Mail, Twitter } from "lucide-react";
-import godday from "../assets/godday.jpeg";
-import per2 from "../assets/tbc5.jpeg";
-import per3 from "../assets/tbc7.jpeg";
-import { HugeiconsIcon } from "@hugeicons/react";
-import { WhatsappIcon } from "@hugeicons/core-free-icons/index";
+import team1 from "../assets/team1.jpg";
+import team2 from "../assets/team2.jpg";
 
 const Team = () => {
-  const members = [
-    {
-      name: "Reuben Godday Jairus",
-      role: "Founder & Lead Educator",
-      image: godday,
-      bio: "Passionate about holistic child development and spiritual mentorship.",
-      featured: true,
-    },
-    {
-      name: "Sarah Johnson",
-      role: "Operations Manager",
-      image: per2,
-      bio: "Expert in educational systems and community outreach programs.",
-      featured: false,
-    },
-    {
-      name: "Michael Chen",
-      role: "Program Coordinator",
-      image: per3,
-      bio: "Dedicated to creating innovative learning tools for children.",
-      featured: false,
-    },
-  ];
-
   // Container variants to handle the staggering of children
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -53,8 +25,19 @@ const Team = () => {
     },
   };
 
+  const images = [
+    {
+      src: team1,
+      alt: "The Better Child Team Photo 1",
+    },
+    {
+      src: team2,
+      alt: "The Better Child Team Photo 2",
+    },
+  ];
+
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-24 bg-slate-50 overflow-hidden">
       <div className="container px-6 mx-auto" id="team">
         {/* Header */}
         <motion.div
@@ -64,71 +47,38 @@ const Team = () => {
           className="max-w-2xl mb-16"
         >
           <h4 className="text-primary font-bold tracking-widest uppercase text-sm mb-3">
-            The Hearts Behind TBC
+            The Hearts Behind The Better Child
           </h4>
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
             Meet Our <span className="text-primary">Dedicated</span> Team
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            A diverse group of educators, mentors, and visionaries committed to
-            shaping the leaders of tomorrow.
+            A passionate group of educators, coaches, and spiritual advisors
+            committed to shaping the leaders of tomorrow.
           </p>
         </motion.div>
 
-        {/* Team Grid */}
+        {/* Team Gallery Grid */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ margin: "-50px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+          className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto"
         >
-          {members.map((member, index) => (
+          {images.map((item, index) => (
             <motion.div
               key={index}
               variants={cardVariants}
-              whileHover={{ y: -10 }}
-              className={`group relative rounded-3xl overflow-hidden transition-all duration-500 hover:shadow-2xl ${
-                member.featured
-                  ? "ring-2 ring-slate-500 ring-offset-4"
-                  : "border border-slate-100"
-              }`}
+              className="bg-white p-4 rounded-3xl border border-slate-100 shadow-lg hover:shadow-2xl transition-all duration-300 group flex flex-col"
             >
-              {/* Image Container */}
-              <div className="aspect-[4/5] overflow-hidden">
+              <div className="relative overflow-hidden aspect-4/3 rounded-2xl bg-slate-100">
                 <img
-                  src={member.image}
-                  alt={member.name}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  src={item.src}
+                  alt={item.alt}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                 />
-              </div>
-
-              {/* Content Overlay - Sliding Up effect */}
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-white">
-                <div className="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
-                  <div className="flex gap-4 mb-4">
-                    <HugeiconsIcon
-                      icon={WhatsappIcon}
-                      className="w-5 h-5 cursor-pointer hover:text-amber-500 transition-colors"
-                    />
-                    <Twitter className="w-5 h-5 cursor-pointer hover:text-amber-500 transition-colors" />
-                    <Mail className="w-5 h-5 cursor-pointer hover:text-amber-500 transition-colors" />
-                  </div>
-                  <p className="text-sm text-slate-200 font-medium leading-relaxed mb-2">
-                    {member.bio}
-                  </p>
-                </div>
-              </div>
-
-              {/* Permanent Info (Below Image) */}
-              <div className="p-6 bg-white relative z-10">
-                <h3 className="text-xl font-bold text-slate-900">
-                  {member.name}
-                </h3>
-                <p className="text-primary font-semibold text-sm">
-                  {member.role}
-                </p>
+                <div className="absolute inset-0 bg-linear-to-t from-slate-950/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
             </motion.div>
           ))}
