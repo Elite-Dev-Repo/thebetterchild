@@ -23,7 +23,7 @@ const Header = () => {
             className="flex items-center mt-7 justify-center gap-4 w-fit px-8 mx-auto bg-background rounded-full py-1"
           >
             <div className="w-3 h-3 animate-pulse rounded-full bg-foreground"></div>
-            <span className="text-sm tracking-wider text-foreground uppercase">
+            <span className="text-[11px] tracking-wider text-foreground uppercase">
               Investing in the Future
             </span>
           </motion.div>
@@ -32,7 +32,7 @@ const Header = () => {
           <motion.h1
             {...fadeInUp}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-5xl md:text-7xl font-extrabold tracking-tight text-white drop-shadow-md"
+            className="text-4xl md:text-6xl font-semibold tracking-tight text-white drop-shadow-md"
           >
             The Better Child Organization.
           </motion.h1>
@@ -41,7 +41,7 @@ const Header = () => {
           <motion.p
             {...fadeInUp}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-xl md:text-2xl text-slate-100 font-light leading-relaxed"
+            className="text-xl md:text-lg text-slate-100 font-light leading-relaxed"
           >
             Where every child grows to become godly and well rounded, and every
             parent finds the right tools, guidance, and support needed to raise
@@ -63,7 +63,7 @@ const Header = () => {
           >
             <Button
               size="lg"
-              className="bg-background text-lg px-8 py-6 rounded-sm font-bold shadow-lg transition-transform hover:scale-105 active:scale-95 hover:bg-background/90 text-foreground"
+              className="bg-background text-sm px-8 py-6 rounded-sm font-semibold shadow-lg transition-transform hover:scale-105 active:scale-95 hover:bg-background/90 text-foreground"
             >
               Become a volunteer
             </Button>
@@ -71,7 +71,7 @@ const Header = () => {
             <a href="#impact">
               <Button
                 size="lg"
-                className="text-lg px-8 py-6 rounded-sm font-bold bg-foreground backdrop-blur-md text-background hover:scale-105 active:scale-95"
+                className="text-sm px-8 py-6 rounded-sm font-semibold bg-foreground backdrop-blur-md text-background hover:scale-105 active:scale-95"
               >
                 See Our Impact
               </Button>

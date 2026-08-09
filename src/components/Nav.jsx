@@ -8,7 +8,7 @@ function Nav() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 150) {
+      if (window.scrollY > 100) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -30,7 +30,7 @@ function Nav() {
     <nav
       className={`fixed top-5 left-1/2 -translate-x-1/2 w-[95%] z-[100] transition-all duration-300 rounded-2xl ${
         isScrolled
-          ? "bg-foreground/95 backdrop-blur-md shadow-2xl h-[70px]"
+          ? "bg-white backdrop-blur-md shadow-2xl h-[70px]"
           : "bg-transparent h-[80px]"
       } flex items-center justify-between px-6 md:px-10`}
     >
@@ -44,9 +44,9 @@ function Nav() {
         {links.map((link) => (
           <li key={link.title}>
             <a
-              className={`text-xs uppercase font-medium tracking-widest px-4 py-2 rounded-full transition-all ${
+              className={`text-[11px] uppercase font-medium tracking-widest px-4 py-2 rounded-full transition-all ${
                 isScrolled
-                  ? "text-background/70 hover:bg-background hover:text-foreground"
+                  ? "text-black/70 hover:bg-background hover:text-foreground"
                   : "text-white/80 hover:bg-white/20 hover:text-white"
               }`}
               href={link.route}
@@ -62,7 +62,7 @@ function Nav() {
         <button
           onClick={() => setIsOpen(!isOpen)}
           className={`p-2 rounded-lg transition-colors ${
-            isScrolled ? "text-background" : "text-white"
+            isScrolled ? "text-black/70" : "text-background"
           }`}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}

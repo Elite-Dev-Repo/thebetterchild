@@ -39,7 +39,7 @@ const Team = () => {
   return (
     <section className="py-24 bg-slate-50 overflow-hidden">
       <div className="container px-6 mx-auto" id="team">
-        {/* Header */}
+        {/* Header section */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
